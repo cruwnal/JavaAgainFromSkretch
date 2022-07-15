@@ -52,6 +52,15 @@ class StudentApp {
        s2.sleep();
        s3.running();
        s1.study();
+       s1.name="kunal nagwanshi";
+       s2.name="ram";
+       s3.name="raju0";
+       s1.age=14;
+       s2.age=15;
+       s3.age=16;
+       s1.usn=1213;
+       s2.usn=1231;
+       s3.usn=3233;
 
     }
 }
