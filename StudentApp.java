@@ -61,6 +61,15 @@ class StudentApp {
        s1.usn=1213;
        s2.usn=1231;
        s3.usn=3233;
+        System.out.println(s1.age);
+        System.out.println(s1.name);
+        System.out.println(s1.usn);
+        System.out.println(s2.name);
+        System.out.println(s2.age);
+        System.out.println(s2.usn);
+        System.out.println(s3.name);
+        System.out.println(s3.age);
+        System.out.println(s3.usn);
 
     }
 }
