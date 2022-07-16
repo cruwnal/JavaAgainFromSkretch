@@ -1,75 +1,75 @@
 
 
-    class Student {
-        String name;
-        int age;
-        String gender;
-        int usn;
+    public class PatternProgrammingOne
+{
+    public static void main(String[] args){
+       Pattern1 p1 = new Pattern1();
+       Pattern1 p2 = new Pattern1();
+       Pattern1 p3 = new Pattern1();
+       Pattern1 p4 = new Pattern1();
+       Pattern1 p5 = new Pattern1();
 
-         void eat() {
-            String eat = "student is eating";
-            System.out.println(eat);
-
-
-        }
-
-        void sleep() {
-            String sleep = "student is sleeping";
-            System.out.println(sleep);
-
-
-        }
-
-        void running() {
-            String running = "student is running";
-            System.out.println(running);
+      p2.pattern2();
+       p3.pattern3();
+        p1.pattern1();
+        p4.pattern4();
+        p5.pattern5();
 
 
 
-        }
 
-        void study() {
-            String study = "student is studying";
 
-        }
+
     }
 
 
 
-
-class StudentApp {
-
-
-    public void main(String[] args) {
-
-
-
-        Student s1 = new Student();
-        Student s2 = new Student();
-        Student s3 = new Student();
-
-       s1.eat();
-       s2.sleep();
-       s3.running();
-       s1.study();
-       s1.name="kunal nagwanshi";
-       s2.name="ram";
-       s3.name="raju0";
-       s1.age=14;
-       s2.age=15;
-       s3.age=16;
-       s1.usn=1213;
-       s2.usn=1231;
-       s3.usn=3233;
-        System.out.println(s1.age);
-        System.out.println(s1.name);
-        System.out.println(s1.usn);
-        System.out.println(s2.name);
-        System.out.println(s2.age);
-        System.out.println(s2.usn);
-        System.out.println(s3.name);
-        System.out.println(s3.age);
-        System.out.println(s3.usn);
-
-    }
 }
+   class Pattern1 {
+
+    void pattern5(){
+        for(int i=10;i>=1;i--){
+            for(int j=1;j<i;j++){
+                System.out.print('*');
+            }
+            System.out.println('*');
+        }
+    }
+
+    void pattern4(){
+        for(int i=5;i>=1;i--){
+            for(int j=1;j<i;j++){
+                System.out.print("*");
+            }
+            System.out.println("*");
+
+        }
+    }
+
+       void pattern3(){
+           for (int i = 1; i < 5; i++) {
+               for (int j = 1; j < i; j++) {
+                   System.out.print("$");
+               }
+               System.out.println("$");
+
+
+           }
+       }
+
+       void pattern1() {
+          // for (int i = 1; i <= 5; i++)
+               //System.out.println("$");
+       }
+
+       void pattern2() {
+           for (int i = 1; i <= 5; i++) {
+               for (int j = 1; j < i; j++) {
+                   System.out.print("$");
+               }
+               System.out.println("$");
+
+
+           }
+       }
+   }
