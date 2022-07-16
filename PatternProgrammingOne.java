@@ -7,13 +7,12 @@ public class PatternProgrammingOne
        Pattern1 p2 = new Pattern1();
        Pattern1 p3 = new Pattern1();
        Pattern1 p4 = new Pattern1();
-       Pattern1 p5 = new Pattern1();
+
 
       p2.pattern2();
        p3.pattern3();
         p1.pattern1();
         p4.pattern4();
-        p5.pattern5();
 
 
 
