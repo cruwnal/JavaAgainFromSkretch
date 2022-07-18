@@ -6,6 +6,7 @@ public class OctalNum {
         int d = 0b00110010;
         System.out.println(a + "\n" + "\n" + b + "\n" + c + "\n" + d);
         assignment();
+        pattern(5);
     }
 
     static void assignment() {
@@ -16,5 +17,16 @@ public class OctalNum {
             System.out.print("Technologies");
         }
 
+    }
+    static void pattern(int n){
+        for(int i=0;i<=n;i++){
+            for( int j=1;j<=i;j++){
+
+                System.out.print(j+" ");
+
+
+            }
+            System.out.println();
+        }
     }
 }

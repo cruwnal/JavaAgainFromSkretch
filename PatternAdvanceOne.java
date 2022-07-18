@@ -5,8 +5,8 @@ public class PatternAdvanceOne {
         pattern3();
         pattern4();
         pattern4_1();
-        pattern5();
-        pattern6();
+         pattern5();
+       pattern6();
     }
 
     static void pattern1() {
