@@ -1,0 +1,31 @@
+import java.util.Scanner;
+public class twoDjaggedArray
+{
+    public static void maim(String [] args){
+        Scanner in = new Scanner(System.in);
+        System.out.println("enter the first dimension of the array");
+        int len1 = in.nextInt();
+        int arr1 [][] = new int[len1][];
+        for(int i=0;i<= arr1.length-1;i++){
+            System.out.println("enter the 2nd dimension length of "+i);
+            int len2 = in.nextInt();
+            arr1[i]= new int[len2];
+
+        }
+        for(int i=0;i<= arr1.length-1;i++){
+            for(int j=0;j<= arr1[i].length-1;j++){
+                System.out.println("enter the marks of college "+i+" enter the student "+j);
+                arr1[i][j]= in.nextInt();
+                
+            }
+        }
+        for(int i=0;i<=arr1.length-1;i++){
+            for(int j=0;j<= arr1[i].length;j++){
+                System.out.print(arr1[i][j]+" ");
+            }
+            System.out.println();
+            
+        }
+
+    }
+}
