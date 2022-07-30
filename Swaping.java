@@ -2,8 +2,10 @@ import java.util.Scanner;
 public class Swaping
 {
     public static void main(String [] args){
-        normalSwapping();
-        arraySwapping();
+       // normalSwapping();
+        //arraySwapping();
+        //copyArray();
+        reverseTheCopyArray();
 
     }
     static void normalSwapping(){
@@ -66,4 +68,62 @@ public class Swaping
 
 
     }
+     static void copyArray(){
+        Scanner in = new Scanner(System.in);
+         System.out.println("enter the length of the array");
+         int len = in.nextInt();
+         int arr[]=new int [len];
+         System.out.println("enter the contents");
+         for(int i=0;i<=arr.length-1;i++){
+             System.out.println("enter the element "+i);
+             arr[i]=in.nextInt();
+         }
+         int arr2[]=new int[arr.length];
+         for(int i=0;i<= arr.length-1 ;i++){
+             arr2[i]=arr[i];
+         }
+         System.out.println("contents of the array 1 is");
+         for(int i=0;i<= arr.length-1;i++){
+             System.out.print(arr[i]+" ");
+         }
+         System.out.println();
+         System.out.println("contents of the 2nd array is ");
+         for(int i=0;i<=arr.length-1;i++){
+             System.out.print(arr2[i]+" ");
+         }
+
+
+     }
+     static void reverseTheCopyArray(){
+
+        Scanner in = new Scanner(System.in);
+         System.out.println("Enter the length of the array");
+        int len= in.nextInt();
+        int arr1[]=new int[len];
+         System.out.println("enter the content odf the array ");
+        for(int i=0;i<= arr1.length-1;i+=1){
+            System.out.println("enter the content for element "+i);
+            arr1[i]= in.nextInt();
+        }
+         System.out.println("printing the array 1 content ");
+        for(int i=0;i<= arr1.length-1;i++){
+            System.out.print(arr1[i]+" ");
+        }
+         System.out.println();
+
+        //arr2
+         int arr2 []=new int[arr1.length];
+         int j = arr2.length-1;
+         for(int i=0;i<= arr1.length-1;i++){
+             arr2[j]=arr1[i];
+             j--;
+         }
+         System.out.println("printing the array 2 in reverse form");
+         for(int i=0;i<= arr2.length-1;i++){
+             System.out.print(arr2[i]);
+         }
+
+
+
+     }
 }
