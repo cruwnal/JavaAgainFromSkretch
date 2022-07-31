@@ -2,9 +2,9 @@ import java.util.Scanner;
 public class Swaping
 {
     public static void main(String [] args){
-       // normalSwapping();
-        //arraySwapping();
-        //copyArray();
+        normalSwapping();
+        arraySwapping();
+        copyArray();
         reverseTheCopyArray();
 
     }
